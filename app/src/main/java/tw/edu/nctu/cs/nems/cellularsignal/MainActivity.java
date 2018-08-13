@@ -8,12 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.content.Intent;
-import android.util.Log;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
-import java.util.List;
 import java.lang.String;
 
 public class MainActivity extends AppCompatActivity {
@@ -50,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void handleMessage(Message msg) {
                 nt.setText((String) msg.obj);
-                ss.setText(Integer.toString(msg.what))
+                ss.setText(Integer.toString(msg.what));
             }
         };
     }

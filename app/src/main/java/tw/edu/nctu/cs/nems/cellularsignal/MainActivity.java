@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         // get arguments
         Bundle extras = this.getIntent().getExtras();
         if (extras != null && extras.containsKey("file")) {
-            file = "/sdcard/cjyeh/cellularsignal/" + extras.getString("file");
+            file = extras.getString("file");
         }
 
         // add service

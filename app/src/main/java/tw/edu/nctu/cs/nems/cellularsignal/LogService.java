@@ -59,7 +59,7 @@ public class LogService extends Service {
             try {
                 FileWriter fw = new FileWriter(MainActivity.file, true);
                 BufferedWriter bw = new BufferedWriter(fw);
-                bw.write(msg.what);
+                bw.write(Integer.toString(msg.what));
                 bw.newLine();
                 bw.close();
             }
